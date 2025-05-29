@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        Username <input type="text" name="usernameForm"><br>
+        Password <input type="password" name="passwordForm"><br>
+        <button type="submit">Login</button>
+    </form>
+    
+    {% if erro %}
+        <p>There is already a user with this username.</p>
+    {% endif %}
+</body>
+</html>
