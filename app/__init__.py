@@ -8,7 +8,7 @@ def create_app():
     app = Flask(__name__)
     app.secret_key='XERECA'
     lm= LoginManager(app)
-    lm.login_view='login'
+    lm.login_view='auth.login'
 
     @lm.user_loader
     def user_loader(id):

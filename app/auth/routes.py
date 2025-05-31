@@ -44,8 +44,9 @@ def register():
 
             return redirect(url_for('auth.login'))
 
+
+@auth_bp.route('/logout', methods=['POST'])
 @login_required
-@auth_bp.route('/logout', methods=['GET'])
 def logout():
     logout_user()
     return redirect(url_for('auth.login'))
